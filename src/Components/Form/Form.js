@@ -83,7 +83,7 @@ class Form extends Component {
                 <input placeholder="0" name="price" value={price} onChange={this.handleInput}/>
                 <button onClick={this.resetState}>Cancel</button>
                 {this.state.editId == null ? (
-                <button onClick={this.createInventory}>Add to Inventory</button>
+                <button onClick={this.addProduct}>Add to Inventory</button>
                 ) : (
                 <button onClick={this.updateProduct}>Save Changes</button>
                 )}
